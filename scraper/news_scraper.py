@@ -41,4 +41,6 @@ for idx, headline in enumerate(headlines[:15]):
 with open("data/raw/bbc_news.json", "w", encoding="utf-8") as f:
     json.dump(articles, f, indent=4, ensure_ascii=False)
 
+
+print(f"\nScraped {len(articles)} articles from BBC News.")
 print("\nSaved data to disastro_model/data/raw/bbc_news.json")
