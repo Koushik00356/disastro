@@ -1,5 +1,31 @@
 [
     {
+        "id": "1ca0287eb4eff746",
+        "headline": "As deadly storms flood Gaza’s tent cities, the displaced fear a worse winter",
+        "disaster_type": "flood",
+        "severity": "high",
+        "source": "The Washington Post",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONF94Zy1mMVNkMlBRbVpUZ0xUcVA5RGJ4NzladEJ4SzRGazhteW9HUWxXV1IyU0tTa0RHSngtRFVUdUd4cEpPSkdhVHZUNEdhWWRQZGNKQTlXVHhiRUN0b0xscHZBVnU4MUc1bEo0QVlRdF9aQm5hS0FWMDc4YndDU0Z0TnZnMmU5eEdZQlFUVFdaUmxlMkFsMlhtVS14empDekw3bHo1MGp2NER6OXkxeUJObXFMVklYaU4w?oc=5",
+        "published_at": "2026-11-12T18:12:16Z",
+        "location": null,
+        "latitude": null,
+        "longitude": null,
+        "alerted_at": "2026-11-12T18:26:44Z"
+    },
+    {
+        "id": "4930816345824390",
+        "headline": "This Day in History: November 12 — From the Bhola Cyclone to Stan Lee's Death",
+        "disaster_type": "cyclone",
+        "severity": "high",
+        "source": "RiverBender.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcjFfc1JudzB0M3ZDemJOaUpkTG4xeEJnelBENER3MmpzTkVNek90SzRVcWNreU1wbE9jT01tT2dMbzdsTWsxSUpFWXp5c2N5cFg1dzE3MXprLTFfN3czV2pHVVFwbGFIMWxOY0lXRjhzVHFSUkVnaHVOX19VSEEteVlFWXp2OEozTU1nd3hOY01ydGI2RjhMcDBvMWhoeENxaWJoYWM5TVpPMlFsbHRidEpLUVFkb2xTUzRGelA2TWdzNGc?oc=5",
+        "published_at": "2026-11-12T16:12:52Z",
+        "location": null,
+        "latitude": null,
+        "longitude": null,
+        "alerted_at": "2026-11-12T18:26:44Z"
+    },
+    {
         "id": "78a8479de4c99b82",
         "headline": "'It can kill us': Kenyans fear impact of El Niño with floods predicted",
         "disaster_type": "flood",

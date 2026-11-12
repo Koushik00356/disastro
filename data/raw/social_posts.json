@@ -1,5 +1,159 @@
 [
     {
+        "id": "beb5d56efe4ad104",
+        "headline": "Mb 4.40 earthquake (reviewed) occurred at 2026-11-12T13:39:57 UTC, Rat Islands, Aleutian Islands, Alaska #quake #earthquake #ratislands #aleutianislands...",
+        "summary": "Mb 4.40 earthquake (reviewed) occurred at 2026-11-12T13:39:57 UTC, Rat Islands, Aleutian Islands, Alaska #quake #earthquake #ratislands #aleutianislands #alaska https://earthquake.usgs.gov/earthquakes/eventpage/us7000txst",
+        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "source_type": "social",
+        "url": "https://bots.krohsnest.com/@quakes/117604837624683078",
+        "published_at": "2026-11-12T18:16:50Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "f4de7076112f87e8",
+        "headline": "Mb 4.30 earthquake (reviewed) occurred at 2026-11-12T13:37:55 UTC, Bonin Islands, Japan region #quake #earthquake #boninislands #japanregion...",
+        "summary": "Mb 4.30 earthquake (reviewed) occurred at 2026-11-12T13:37:55 UTC, Bonin Islands, Japan region #quake #earthquake #boninislands #japanregion https://earthquake.usgs.gov/earthquakes/eventpage/us7000txsu",
+        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "source_type": "social",
+        "url": "https://bots.krohsnest.com/@quakes/117604801765878098",
+        "published_at": "2026-11-12T18:07:42Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "2e4cd34a3a5a4a46",
+        "headline": "#Earthquake (#زلزال) possibly felt 3 min 43 sec ago in #Israel. Felt it? Tell us via: 📱https://m.emsc.eu/#app 🌐https://m.emsc.eu 🖥https://www.emsc-csem.org...",
+        "summary": "#Earthquake (#زلزال) possibly felt 3 min 43 sec ago in #Israel. Felt it? Tell us via: 📱https://m.emsc.eu/#app 🌐https://m.emsc.eu 🖥https://www.emsc-csem.org ⚠ Automatic crowdsourced detection, not seismically verified yet. More info soon!",
+        "source": "Mastodon @lastquake@masto.ai",
+        "source_type": "social",
+        "url": "https://masto.ai/@lastquake/117604742913905401",
+        "published_at": "2026-11-12T17:52:44Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "8a0ee0aeeef156f0",
+        "headline": "Ml 2.95 earthquake (reviewed) occurred at 2026-11-12T17:18:59 UTC, 3 km NNW of Little America, Wyoming #quake #earthquake #littleamerica #wyoming...",
+        "summary": "Ml 2.95 earthquake (reviewed) occurred at 2026-11-12T17:18:59 UTC, 3 km NNW of Little America, Wyoming #quake #earthquake #littleamerica #wyoming https://earthquake.usgs.gov/earthquakes/eventpage/uu80164356",
+        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "source_type": "social",
+        "url": "https://bots.krohsnest.com/@quakes/117604707420107434",
+        "published_at": "2026-11-12T17:43:43Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "77cc7e452d8f693d",
+        "headline": "Ml 4.10 earthquake (reviewed) occurred at 2026-11-12T05:38:46 UTC, 123 km SE of Adak, Alaska #quake #earthquake #adak #alaska...",
+        "summary": "Ml 4.10 earthquake (reviewed) occurred at 2026-11-12T05:38:46 UTC, 123 km SE of Adak, Alaska #quake #earthquake #adak #alaska https://earthquake.usgs.gov/earthquakes/eventpage/aka2026wkgert",
+        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "source_type": "social",
+        "url": "https://bots.krohsnest.com/@quakes/117604692357101422",
+        "published_at": "2026-11-12T17:39:53Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "48648ca997984300",
+        "headline": "Ml 2.50 earthquake (automatic) occurred at 2026-11-12T16:19:07 UTC, 67 km E of Port Alsworth, Alaska #quake #earthquake #portalsworth #alaska...",
+        "summary": "Ml 2.50 earthquake (automatic) occurred at 2026-11-12T16:19:07 UTC, 67 km E of Port Alsworth, Alaska #quake #earthquake #portalsworth #alaska https://earthquake.usgs.gov/earthquakes/eventpage/aka2026wlbocy",
+        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "source_type": "social",
+        "url": "https://bots.krohsnest.com/@quakes/117604393097423491",
+        "published_at": "2026-11-12T16:23:47Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "edc3ffddfd2fe231",
+        "headline": "New #earthquake detected: M 4.5 - 3 km E of Tako, #Japan 2026/11/12, 13:27:22 UTC GPS: 35.7319, 140.5102 Depth: 73.353 km 🔗...",
+        "summary": "New #earthquake detected: M 4.5 - 3 km E of Tako, #Japan 2026/11/12, 13:27:22 UTC GPS: 35.7319, 140.5102 Depth: 73.353 km 🔗 https://earthquake.usgs.gov/earthquakes/eventpage/us7000txsr",
+        "source": "Mastodon @earthquake_monitor@mstdn.social",
+        "source_type": "social",
+        "url": "https://mstdn.social/@earthquake_monitor/117604260383623902",
+        "published_at": "2026-11-12T15:50:02Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "0bff614c8109a78d",
+        "headline": "Ml 3.20 earthquake (automatic) occurred at 2026-11-12T15:43:54 UTC, 36 km SSW of Nanwalek, Alaska #quake #earthquake #nanwalek #alaska...",
+        "summary": "Ml 3.20 earthquake (automatic) occurred at 2026-11-12T15:43:54 UTC, 36 km SSW of Nanwalek, Alaska #quake #earthquake #nanwalek #alaska https://earthquake.usgs.gov/earthquakes/eventpage/aka2026wlajid",
+        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "source_type": "social",
+        "url": "https://bots.krohsnest.com/@quakes/117604244176098598",
+        "published_at": "2026-11-12T15:45:54Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "a02011154fe9c567",
+        "headline": "Mb 4.50 earthquake (reviewed) occurred at 2026-11-12T13:27:22 UTC, 3 km E of Tako, Japan #quake #earthquake #tako #japan...",
+        "summary": "Mb 4.50 earthquake (reviewed) occurred at 2026-11-12T13:27:22 UTC, 3 km E of Tako, Japan #quake #earthquake #tako #japan https://earthquake.usgs.gov/earthquakes/eventpage/us7000txsr",
+        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "source_type": "social",
+        "url": "https://bots.krohsnest.com/@quakes/117604244043021093",
+        "published_at": "2026-11-12T15:45:52Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "ae034de533e2b005",
+        "headline": "📍 3 km E of Tako, Japan 🕐 Thu 12 Nov 2026 13:27 UTC 🌍 M4.5 Earthquake 🟢 Light 📊 Magnitude: 4.5 📏 Depth: 73.4 km — Intermediate depth 🗺️ 35.7319, 140.5102 🔗...",
+        "summary": "📍 3 km E of Tako, Japan 🕐 Thu 12 Nov 2026 13:27 UTC 🌍 M4.5 Earthquake 🟢 Light 📊 Magnitude: 4.5 📏 Depth: 73.4 km — Intermediate depth 🗺️ 35.7319, 140.5102 🔗 https://earthquake.usgs.gov/earthquakes/eventpage/us7000txsr #Earthquake #Seismic #EarthAlerts #DisasterAlert #BreakingNews #Environment #Nature #Science #OffGrid #Tako #Japan",
+        "source": "Mastodon @earthalerts",
+        "source_type": "social",
+        "url": "https://mastodon.social/@earthalerts/117604243515002945",
+        "published_at": "2026-11-12T15:45:44Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "2d011e41dfd0b5ef",
+        "headline": "Natural Hazards · Nov 12, 15:15 UTC Last 24 hours: 11 quakes of M4.5+, 0 of M6+. • 3 active storms: Typhoon Cempaka 65 kt, Pena 30 kt, Tropical Cyclone 03S...",
+        "summary": "Natural Hazards · Nov 12, 15:15 UTC Last 24 hours: 11 quakes of M4.5+, 0 of M6+. • 3 active storms: Typhoon Cempaka 65 kt, Pena 30 kt, Tropical Cyclone 03S 25 kt • Strongest quake M5.4, South Sandwich Islands region • 797 fire clusters from 16,343 satellite… https://earthlog.news/natural-hazards #NaturalHazards #Earthquake #Weather",
+        "source": "Mastodon @earthlog@mastodon.world",
+        "source_type": "social",
+        "url": "https://mastodon.world/@earthlog/117604123281875383",
+        "published_at": "2026-11-12T15:15:10Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "9489cf21f5ca6514",
+        "headline": "#Earthquake (#زلزال) possibly felt 18 sec ago in #Israel. Felt it? Tell us via: 📱https://m.emsc.eu/#app 🌐https://m.emsc.eu 🖥https://www.emsc-csem.org ⚠...",
+        "summary": "#Earthquake (#زلزال) possibly felt 18 sec ago in #Israel. Felt it? Tell us via: 📱https://m.emsc.eu/#app 🌐https://m.emsc.eu 🖥https://www.emsc-csem.org ⚠ Automatic crowdsourced detection, not seismically verified yet. More info soon!",
+        "source": "Mastodon @lastquake@masto.ai",
+        "source_type": "social",
+        "url": "https://masto.ai/@lastquake/117604066488965674",
+        "published_at": "2026-11-12T15:00:43Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "5c74944bfccaa854",
+        "headline": "Magnitude: 3.9 Intensity: 2 Depth: 50000m ■■■■□□□□□□ Details: 2026-11-12 JST 22:27:26 Location: 千葉県北東部 (Northeastern Chiba Prefecture) Map:...",
+        "summary": "Magnitude: 3.9 Intensity: 2 Depth: 50000m ■■■■□□□□□□ Details: 2026-11-12 JST 22:27:26 Location: 千葉県北東部 (Northeastern Chiba Prefecture) Map: https://www.google.com/maps/place/35°420%20N+140°4159%20E/@35.7,140.7,10z #EarthQuake #Quake #Japan",
+        "source": "Mastodon @japanquake@geodata.nexus",
+        "source_type": "social",
+        "url": "https://geodata.nexus/@japanquake/statuses/01M77ZHEGXX8D8SC93A2K8EEP4",
+        "published_at": "2026-11-12T13:35:46Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
+        "id": "5612b04aadd59c3e",
+        "headline": "Ml 2.50 earthquake (automatic) occurred at 2026-11-12T13:10:38 UTC, 24 km ESE of Kasilof, Alaska #quake #earthquake #kasilof #alaska...",
+        "summary": "Ml 2.50 earthquake (automatic) occurred at 2026-11-12T13:10:38 UTC, 24 km ESE of Kasilof, Alaska #quake #earthquake #kasilof #alaska https://earthquake.usgs.gov/earthquakes/eventpage/aka2026wkvgod",
+        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "source_type": "social",
+        "url": "https://bots.krohsnest.com/@quakes/117603646312238681",
+        "published_at": "2026-11-12T13:13:52Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
+        "hashtag": "earthquake"
+    },
+    {
         "id": "46dc310ff3c01860",
         "headline": "#Magnitude : 4.7 Region: Flores , Indonesia Time: 2026-11-12 11:16:30 UTC #Epicenter : 120.88°E 8.15°S Depth: 10 km #Earthquake...",
         "summary": "#Magnitude : 4.7 Region: Flores , Indonesia Time: 2026-11-12 11:16:30 UTC #Epicenter : 120.88°E 8.15°S Depth: 10 km #Earthquake https://geofon.gfz.de/eqexplorer/events/gfz2026wejv/general",
@@ -7,7 +161,7 @@
         "source_type": "social",
         "url": "https://helmholtz.social/@gfzearthquakes/117603307711506481",
         "published_at": "2026-11-12T11:47:45Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
         "hashtag": "earthquake"
     },
     {
@@ -18,140 +172,52 @@
         "source_type": "social",
         "url": "https://bots.krohsnest.com/@quakes/117603001259971681",
         "published_at": "2026-11-12T10:29:49Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:41Z",
         "hashtag": "earthquake"
     },
     {
-        "id": "8321d6081b26ce27",
-        "headline": "Ml 2.70 earthquake (automatic) occurred at 2026-11-12T10:17:31 UTC, 119 km ESE of Cordova, Alaska #quake #earthquake #cordova #alaska...",
-        "summary": "Ml 2.70 earthquake (automatic) occurred at 2026-11-12T10:17:31 UTC, 119 km ESE of Cordova, Alaska #quake #earthquake #cordova #alaska https://earthquake.usgs.gov/earthquakes/eventpage/aka2026wkpmlh",
-        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "id": "67b23de105a27781",
+        "headline": "Tidal flood alerts & warnings for Yorkshire, Humber & Lincolnshire have been issued by DEFRA for the following locations: North Sea coast from Staithes to...",
+        "summary": "Tidal flood alerts & warnings for Yorkshire, Humber & Lincolnshire have been issued by DEFRA for the following locations: North Sea coast from Staithes to Whitby including tidal River Esk - alert. North Sea coast at Withernsea, Easington and Kilnsea - alert. North Sea coast at Withernsea - warning. #bot #flood https://www.gov.uk/check-flooding",
+        "source": "Mastodon @cleeinfobot@tech.lgbt",
         "source_type": "social",
-        "url": "https://bots.krohsnest.com/@quakes/117602958408852033",
-        "published_at": "2026-11-12T10:18:55Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
+        "url": "https://tech.lgbt/@cleeinfobot/117604766949611024",
+        "published_at": "2026-11-12T17:58:51Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
+        "hashtag": "flood"
     },
     {
-        "id": "91c63cd3a52ccf94",
-        "headline": "Mb 4.00 earthquake (reviewed) occurred at 2026-11-11T11:01:39 UTC, 10 km NE of San Agustín Chayuco, Mexico #quake #earthquake #sanagustnchayuco #mexico...",
-        "summary": "Mb 4.00 earthquake (reviewed) occurred at 2026-11-11T11:01:39 UTC, 10 km NE of San Agustín Chayuco, Mexico #quake #earthquake #sanagustnchayuco #mexico https://earthquake.usgs.gov/earthquakes/eventpage/us7000txim",
-        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "id": "3126a12f18dd18bb",
+        "headline": "#NWS #flood #nwsflashflood #FlashFloodWarning Flash Flood Warning for Monmouth, NJ #NJwx Flash Flood Warning issued November 12 at 12:31PM EST until...",
+        "summary": "#NWS #flood #nwsflashflood #FlashFloodWarning Flash Flood Warning for Monmouth, NJ #NJwx Flash Flood Warning issued November 12 at 12:31PM EST until November 12 at 3:45PM EST by NWS Mount Holly NJAt 1231 PM EST, NJ511 reported flooding on NJ35 in Middletown Township. All lanes were closed in the southbound direction at CR50 and New Monmouth Road. The northbound lanes south of Kings Highway and Tindall Road were also closed. HAZARD...Flash flooding caused by thunderstorms. SOURCE...Radar indicated. IMPACT...Flash flooding of small creeks and streams, urban areas, highways, streets and underpass",
+        "source": "Mastodon @flashflood_bot@m.ai6yr.org",
         "source_type": "social",
-        "url": "https://bots.krohsnest.com/@quakes/117602918575807650",
-        "published_at": "2026-11-12T10:08:47Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
+        "url": "https://m.ai6yr.org/@flashflood_bot/117604661969597223",
+        "published_at": "2026-11-12T17:32:09Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
+        "hashtag": "flood"
     },
     {
-        "id": "47310debc1ac09c3",
-        "headline": "Ml 3.20 earthquake (reviewed) occurred at 2026-11-12T09:20:18 UTC, 14 km E of Pearsall, Texas #quake #earthquake #pearsall #texas...",
-        "summary": "Ml 3.20 earthquake (reviewed) occurred at 2026-11-12T09:20:18 UTC, 14 km E of Pearsall, Texas #quake #earthquake #pearsall #texas https://earthquake.usgs.gov/earthquakes/eventpage/tx2026wgyidv",
-        "source": "Mastodon @quakes@bots.krohsnest.com",
+        "id": "026bcf8af615c1cc",
+        "headline": "#NWS #flood #nwsflashflood #FlashFloodWarning Flash Flood Warning for Monmouth, NJ #NJwx Flash Flood Warning issued November 12 at 11:45AM EST until...",
+        "summary": "#NWS #flood #nwsflashflood #FlashFloodWarning Flash Flood Warning for Monmouth, NJ #NJwx Flash Flood Warning issued November 12 at 11:45AM EST until November 12 at 3:45PM EST by NWS Mount Holly NJFFWPHI The National Weather Service in Mount Holly has issued a * Flash Flood Warning for... Northeastern Monmouth County in central New Jersey... * Until 345 PM EST. * At 1145 AM EST, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Between 1 and 2 inches of rain have fallen. The expected rainfall rate is 1.5 to 2.5 inches in 1 hour. Additional rainfall amounts of 1 ",
+        "source": "Mastodon @flashflood_bot@m.ai6yr.org",
         "source_type": "social",
-        "url": "https://bots.krohsnest.com/@quakes/117602749902567717",
-        "published_at": "2026-11-12T09:25:53Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
+        "url": "https://m.ai6yr.org/@flashflood_bot/117604488945357324",
+        "published_at": "2026-11-12T16:48:09Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
+        "hashtag": "flood"
     },
     {
-        "id": "c316f32dd11582ad",
-        "headline": "#Magnitude : 4.4 Region: Vancouver Island, Canada Time: 2026-11-12 08:26:43 UTC #Epicenter : 129.81°W 50.16°N Depth: 10 km #Earthquake...",
-        "summary": "#Magnitude : 4.4 Region: Vancouver Island, Canada Time: 2026-11-12 08:26:43 UTC #Epicenter : 129.81°W 50.16°N Depth: 10 km #Earthquake https://geofon.gfz.de/eqexplorer/events/gfz2026weee/general",
-        "source": "Mastodon @gfzearthquakes@helmholtz.social",
+        "id": "5eaa45b5ad6e389c",
+        "headline": "Tidal flood alerts & warnings for Yorkshire, Humber & Lincolnshire have been issued by DEFRA for the following locations: North Sea coast from Staithes to...",
+        "summary": "Tidal flood alerts & warnings for Yorkshire, Humber & Lincolnshire have been issued by DEFRA for the following locations: North Sea coast from Staithes to Whitby including tidal River Esk - alert. North Sea coast at Withernsea, Easington and Kilnsea - alert. #bot #flood https://www.gov.uk/check-flooding",
+        "source": "Mastodon @cleeinfobot@tech.lgbt",
         "source_type": "social",
-        "url": "https://helmholtz.social/@gfzearthquakes/117602715985144209",
-        "published_at": "2026-11-12T09:17:16Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
-    },
-    {
-        "id": "12246efa93228843",
-        "headline": "Mb 4.10 earthquake (reviewed) occurred at 2026-11-12T08:26:40 UTC, 215 km WSW of Port McNeill, Canada #quake #earthquake #portmcneill #canada...",
-        "summary": "Mb 4.10 earthquake (reviewed) occurred at 2026-11-12T08:26:40 UTC, 215 km WSW of Port McNeill, Canada #quake #earthquake #portmcneill #canada https://earthquake.usgs.gov/earthquakes/eventpage/us7000txrm",
-        "source": "Mastodon @quakes@bots.krohsnest.com",
-        "source_type": "social",
-        "url": "https://bots.krohsnest.com/@quakes/117602588886643926",
-        "published_at": "2026-11-12T08:44:57Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
-    },
-    {
-        "id": "73ac10d823346506",
-        "headline": "📍 off the coast of Oregon 🕐 Thu 12 Nov 2026 08:17 UTC 🌍 M4.5 Earthquake 🟢 Light 📊 Magnitude: 4.5 📏 Depth: 10 km — Shallow 🗺️ 44.4539, -129.6205 🔗...",
-        "summary": "📍 off the coast of Oregon 🕐 Thu 12 Nov 2026 08:17 UTC 🌍 M4.5 Earthquake 🟢 Light 📊 Magnitude: 4.5 📏 Depth: 10 km — Shallow 🗺️ 44.4539, -129.6205 🔗 https://earthquake.usgs.gov/earthquakes/eventpage/us7000txrk #Earthquake #Seismic #EarthAlerts #DisasterAlert #BreakingNews #Environment #Nature #Science #Survival #OffTheCoastOfOregon",
-        "source": "Mastodon @earthalerts",
-        "source_type": "social",
-        "url": "https://mastodon.social/@earthalerts/117602531962781194",
-        "published_at": "2026-11-12T08:30:28Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
-    },
-    {
-        "id": "74435d188a048ff2",
-        "headline": "New #earthquake detected: M 4.5 - off the coast of Oregon 2026/11/12, 08:17:28 UTC GPS: 44.4539, -129.6205 Depth: 10.000 km 🔗...",
-        "summary": "New #earthquake detected: M 4.5 - off the coast of Oregon 2026/11/12, 08:17:28 UTC GPS: 44.4539, -129.6205 Depth: 10.000 km 🔗 https://earthquake.usgs.gov/earthquakes/eventpage/us7000txrk",
-        "source": "Mastodon @earthquake_monitor@mstdn.social",
-        "source_type": "social",
-        "url": "https://mstdn.social/@earthquake_monitor/117602530244448196",
-        "published_at": "2026-11-12T08:30:02Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
-    },
-    {
-        "id": "f7c743a166ee4383",
-        "headline": "Mb 4.50 earthquake (reviewed) occurred at 2026-11-12T08:17:28 UTC, off the coast of Oregon #quake #earthquake #offthecoastoforegon...",
-        "summary": "Mb 4.50 earthquake (reviewed) occurred at 2026-11-12T08:17:28 UTC, off the coast of Oregon #quake #earthquake #offthecoastoforegon https://earthquake.usgs.gov/earthquakes/eventpage/us7000txrk",
-        "source": "Mastodon @quakes@bots.krohsnest.com",
-        "source_type": "social",
-        "url": "https://bots.krohsnest.com/@quakes/117602529217279478",
-        "published_at": "2026-11-12T08:29:46Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
-    },
-    {
-        "id": "0193de5402df7f38",
-        "headline": "Ml 3.14 earthquake (automatic) occurred at 2026-11-12T08:18:29 UTC, 11 km W of Hammond, Oregon #quake #earthquake #hammond #oregon...",
-        "summary": "Ml 3.14 earthquake (automatic) occurred at 2026-11-12T08:18:29 UTC, 11 km W of Hammond, Oregon #quake #earthquake #hammond #oregon https://earthquake.usgs.gov/earthquakes/eventpage/uw714138021",
-        "source": "Mastodon @quakes@bots.krohsnest.com",
-        "source_type": "social",
-        "url": "https://bots.krohsnest.com/@quakes/117602498295238480",
-        "published_at": "2026-11-12T08:21:54Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
-    },
-    {
-        "id": "e19f76bd3b1c86fd",
-        "headline": "Daily Quakes ■■■■□□□□□□ ■■■■■□□□□□ ■■■□□□□□□□ #EarthQuake #Quake",
-        "summary": "Daily Quakes ■■■■□□□□□□ ■■■■■□□□□□ ■■■□□□□□□□ #EarthQuake #Quake",
-        "source": "Mastodon @japanquake@geodata.nexus",
-        "source_type": "social",
-        "url": "https://geodata.nexus/@japanquake/statuses/01M77CC1FN48YJFK4VZF4MT3GH",
-        "published_at": "2026-11-12T08:00:46Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
-    },
-    {
-        "id": "314dd91fec711e93",
-        "headline": "#Magnitude : 3.6 Region: San Juan Province, Argentina Time: 2026-11-12 06:45:22 UTC #Epicenter : 69.40°W 31.60°S Depth: 118 km #Earthquake...",
-        "summary": "#Magnitude : 3.6 Region: San Juan Province, Argentina Time: 2026-11-12 06:45:22 UTC #Epicenter : 69.40°W 31.60°S Depth: 118 km #Earthquake https://geofon.gfz.de/eqexplorer/events/gfz2026weav/general",
-        "source": "Mastodon @gfzearthquakes@helmholtz.social",
-        "source_type": "social",
-        "url": "https://helmholtz.social/@gfzearthquakes/117602274577081000",
-        "published_at": "2026-11-12T07:25:01Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
-    },
-    {
-        "id": "fc1eb6e4aac2f343",
-        "headline": "#Magnitude : 4.3 Region: South of Fiji Islands Time: 2026-11-11 19:50:22 UTC #Epicenter : 179.78°W 23.50°S Depth: 536 km #Earthquake...",
-        "summary": "#Magnitude : 4.3 Region: South of Fiji Islands Time: 2026-11-11 19:50:22 UTC #Epicenter : 179.78°W 23.50°S Depth: 536 km #Earthquake https://geofon.gfz.de/eqexplorer/events/gfz2026wdff/general",
-        "source": "Mastodon @gfzearthquakes@helmholtz.social",
-        "source_type": "social",
-        "url": "https://helmholtz.social/@gfzearthquakes/117602269336047713",
-        "published_at": "2026-11-12T07:23:41Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "earthquake"
+        "url": "https://tech.lgbt/@cleeinfobot/117604058948332207",
+        "published_at": "2026-11-12T14:58:48Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
+        "hashtag": "flood"
     },
     {
         "id": "5dae7547fea0e9b9",
@@ -161,7 +227,7 @@
         "source_type": "social",
         "url": "https://kolektiva.social/@_mu/117598477535708421",
         "published_at": "2026-11-11T15:19:22Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
         "hashtag": "flood"
     },
     {
@@ -172,7 +238,7 @@
         "source_type": "social",
         "url": "https://mastodon.world/@sallytheflame/117592505938671665",
         "published_at": "2026-11-10T14:00:43Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
         "hashtag": "flood"
     },
     {
@@ -183,7 +249,7 @@
         "source_type": "social",
         "url": "https://mastodon.world/@earthlog/117592354806063247",
         "published_at": "2026-11-10T13:22:17Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
         "hashtag": "flood"
     },
     {
@@ -194,7 +260,7 @@
         "source_type": "social",
         "url": "https://mstdn.science/@GMIK69/117591413133581091",
         "published_at": "2026-11-10T09:22:48Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
         "hashtag": "flood"
     },
     {
@@ -205,7 +271,7 @@
         "source_type": "social",
         "url": "https://m.ai6yr.org/@uccawx/117588867586241939",
         "published_at": "2026-11-09T22:35:26Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
         "hashtag": "flood"
     },
     {
@@ -216,7 +282,7 @@
         "source_type": "social",
         "url": "https://m.ai6yr.org/@flashflood_bot/117588477141475460",
         "published_at": "2026-11-09T20:56:08Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
         "hashtag": "flood"
     },
     {
@@ -227,7 +293,7 @@
         "source_type": "social",
         "url": "https://m.ai6yr.org/@flashflood_bot/117588131170825728",
         "published_at": "2026-11-09T19:28:09Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
         "hashtag": "flood"
     },
     {
@@ -238,7 +304,7 @@
         "source_type": "social",
         "url": "https://msto.cx/@phoenixwxalerts/117587470297315132",
         "published_at": "2026-11-09T16:40:05Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
         "hashtag": "flood"
     },
     {
@@ -249,52 +315,19 @@
         "source_type": "social",
         "url": "https://m.ai6yr.org/@flashflood_bot/117587093260856243",
         "published_at": "2026-11-09T15:04:12Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
+        "scraped_at": "2026-11-12T18:25:42Z",
         "hashtag": "flood"
     },
     {
-        "id": "7cdfcc816f384d04",
-        "headline": "if you can help with a boost or a donation so that islam & her elderly parents can escape the relentless wet, please do. as it is, there's scant protection...",
-        "summary": "if you can help with a boost or a donation so that islam & her elderly parents can escape the relentless wet, please do. as it is, there's scant protection from the water - & the water is run through with sewage. can you imagine living under these conditions? #rain #flood #shelter #gaza https://elk.zone/mastodon.social/@eslam94/117586765497003045",
-        "source": "Mastodon @kathimmel@mstdn.social",
+        "id": "07f20f3230c49ae8",
+        "headline": "Usually it's @Viss talking about wildfires... I'm not used to being the one saying there is a wildfire in the next county over.... And apparently one in the...",
+        "summary": "Usually it's @Viss talking about wildfires... I'm not used to being the one saying there is a wildfire in the next county over.... And apparently one in the county below me too. https://panhandlenewsnetwork.com/2026/11/11/kessel-fire-update-wednesday-afternoon/ #KesselFire #Cacapon #WestVirginia #Virginia #Wildfire",
+        "source": "Mastodon @bobkmertz@techhub.social",
         "source_type": "social",
-        "url": "https://mstdn.social/@kathimmel/117586833415932935",
-        "published_at": "2026-11-09T13:58:07Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "flood"
-    },
-    {
-        "id": "ea0d8a4dd9b8a166",
-        "headline": "#NWS #flood #nwsflashflood #FlashFloodWarning Flash Flood Warning for La Salle, TX; McMullen, TX; Webb, TX #TXwx Flash Flood Warning issued November 9 at...",
-        "summary": "#NWS #flood #nwsflashflood #FlashFloodWarning Flash Flood Warning for La Salle, TX; McMullen, TX; Webb, TX #TXwx Flash Flood Warning issued November 9 at 7:54AM CST until November 9 at 11:00AM CST by NWS Corpus Christi TXFFWCRP The National Weather Service in Corpus Christi has issued a * Flash Flood Warning for... Southeastern La Salle County in south central Texas... Southern McMullen County in south central Texas... Northeastern Webb County in south central Texas... * Until 1100 AM CST. * At 754 AM CST, Doppler radar indicated thunderstorms producing heavy rain across the warned area. Betwe",
-        "source": "Mastodon @flashflood_bot@m.ai6yr.org",
-        "source_type": "social",
-        "url": "https://m.ai6yr.org/@flashflood_bot/117586825666619507",
-        "published_at": "2026-11-09T13:56:09Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "flood"
-    },
-    {
-        "id": "286beea0d2a1f6b7",
-        "headline": "JTA checked on our house this morning, which has been under repair since it flooded 269 days ago. There he discovered that, after countless delays and long...",
-        "summary": "JTA checked on our house this morning, which has been under repair since it flooded 269 days ago. There he discovered that, after countless delays and long periods of no progress, the replacement flooring has finally arrived! I'm still hopeful of a \"Christmas miracle\" of being able to move back home before the end of the year. But we'll see... Read more: https://danq.me/2026/11/09/f-day-plus-269/ #note #builder #christmas #flood #flood-2026 #floods #floors #houses #moving #xmas",
-        "source": "Mastodon @blog@danq.me",
-        "source_type": "social",
-        "url": "https://m.danq.me/@blog/117586015173033445",
-        "published_at": "2026-11-09T10:30:02Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "flood"
-    },
-    {
-        "id": "a71bc9b11aa0f0d6",
-        "headline": "@misterjta checked on our house this morning, which has been under repair since it flooded 269 days ago. There he discovered that, after countless delays...",
-        "summary": "@misterjta checked on our house this morning, which has been under repair since it flooded 269 days ago. There he discovered that, after countless delays and long periods of no progress, the replacement flooring has finally arrived! I'm still hopeful of a \"Christmas miracle\" of being able to move back home before the end of the year. But we'll see... #note #flood2026 #flood #floods #floors #houses #builder #christmas #xmas #moving Via: 🔗 https://danq.me/2026/11/09/f-day-plus-269/",
-        "source": "Mastodon @dan@danq.me",
-        "source_type": "social",
-        "url": "https://m.danq.me/@dan/117586001268846631",
-        "published_at": "2026-11-09T10:26:30Z",
-        "scraped_at": "2026-11-12T12:40:28Z",
-        "hashtag": "flood"
+        "url": "https://techhub.social/@bobkmertz/117604667189045668",
+        "published_at": "2026-11-12T17:33:29Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
+        "hashtag": "wildfire"
     },
     {
         "id": "5a1172c9d5ab2ddf",
@@ -304,7 +337,7 @@
         "source_type": "social",
         "url": "https://scicomm.xyz/@dripping1911/117599191148152209",
         "published_at": "2026-11-11T18:20:51Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -315,7 +348,7 @@
         "source_type": "social",
         "url": "https://sfba.social/@andybrwn/117594048241063482",
         "published_at": "2026-11-10T20:32:57Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -326,7 +359,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@thewildnews/117583776221792614",
         "published_at": "2026-11-09T01:00:38Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -337,7 +370,7 @@
         "source_type": "social",
         "url": "https://sfba.social/@jeridansky/117583607736812679",
         "published_at": "2026-11-09T00:17:47Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -348,7 +381,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@danielkhent/117576412204879577",
         "published_at": "2026-11-07T17:47:52Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -359,7 +392,7 @@
         "source_type": "social",
         "url": "https://mas.to/@felixrohrbach/117576264020929361",
         "published_at": "2026-11-07T17:10:11Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -370,7 +403,7 @@
         "source_type": "social",
         "url": "https://veganism.social/@Dragofix/117572921716296044",
         "published_at": "2026-11-07T03:00:11Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -381,7 +414,7 @@
         "source_type": "social",
         "url": "https://scicomm.xyz/@dripping1911/117567421166660318",
         "published_at": "2026-11-06T03:41:20Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -392,7 +425,7 @@
         "source_type": "social",
         "url": "https://episcodon.net/@reverendref/117566545179004528",
         "published_at": "2026-11-05T23:58:33Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -403,7 +436,7 @@
         "source_type": "social",
         "url": "https://episcodon.net/@reverendref/117566433724184452",
         "published_at": "2026-11-05T23:30:13Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -414,7 +447,7 @@
         "source_type": "social",
         "url": "https://climatejustice.social/@GreenChristian/117564719901854935",
         "published_at": "2026-11-05T16:14:22Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -425,7 +458,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@hacksgr/117564199531468183",
         "published_at": "2026-11-05T14:02:01Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -436,7 +469,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@mbongowo/117559072750439362",
         "published_at": "2026-11-04T16:18:13Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -447,7 +480,7 @@
         "source_type": "social",
         "url": "https://fed.brid.gy/r/https://coloradosun.com/2026/11/03/proposition-137-results-land-management/",
         "published_at": "2026-11-04T04:41:00Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -458,7 +491,7 @@
         "source_type": "social",
         "url": "https://veganism.social/@Dragofix/117554609417265758",
         "published_at": "2026-11-03T21:23:08Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -469,7 +502,7 @@
         "source_type": "social",
         "url": "https://veganism.social/@Dragofix/117554360816421408",
         "published_at": "2026-11-03T20:19:55Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
@@ -480,19 +513,19 @@
         "source_type": "social",
         "url": "https://sfba.social/@cvvhrn/117550606342759734",
         "published_at": "2026-11-03T04:25:06Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
+        "scraped_at": "2026-11-12T18:25:44Z",
         "hashtag": "wildfire"
     },
     {
-        "id": "e561daa341deb9da",
-        "headline": "Drought and wildfire are quietly weakening Earth’s carbon defenses...",
-        "summary": "Drought and wildfire are quietly weakening Earth’s carbon defenses https://www.earth.com/plants/drought-and-wildfire-are-quietly-weakening-earths-carbon-defenses/ #environment #weather #drought #wildfire #wildfires #carbon",
-        "source": "Mastodon @Dragofix@veganism.social",
+        "id": "aecaf945bf08ae57",
+        "headline": "@listigeplaylists.bsky.social open.spotify.com/track/76BuIH... #DownAtTheTwist&Shout #MaryChapinCarpenter #CajunCountry #Hurricane #WeatherSongs",
+        "summary": "@listigeplaylists.bsky.social open.spotify.com/track/76BuIH... #DownAtTheTwist&Shout #MaryChapinCarpenter #CajunCountry #Hurricane #WeatherSongs",
+        "source": "Mastodon @flipturns.bsky.social@bsky.brid.gy",
         "source_type": "social",
-        "url": "https://veganism.social/@Dragofix/117549950545376388",
-        "published_at": "2026-11-03T01:38:19Z",
-        "scraped_at": "2026-11-12T12:40:30Z",
-        "hashtag": "wildfire"
+        "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:itcjt5iogtepkxhlm7mw2gk6/post/3n24ncyrx4k2r",
+        "published_at": "2026-11-12T14:06:37Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
+        "hashtag": "hurricane"
     },
     {
         "id": "94cad14a529ea46e",
@@ -502,7 +535,7 @@
         "source_type": "social",
         "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:itcjt5iogtepkxhlm7mw2gk6/post/3mzvrhxvg5k2t",
         "published_at": "2026-11-09T20:32:21Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -513,7 +546,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@6060764/117564947434967510",
         "published_at": "2026-11-05T17:12:14Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -524,7 +557,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@nojarama/117553036201120543",
         "published_at": "2026-11-03T14:43:03Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -535,7 +568,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@earthalerts/117540012131361033",
         "published_at": "2026-11-01T07:30:51Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -546,7 +579,7 @@
         "source_type": "social",
         "url": "https://fed.brid.gy/r/https://www.10tv.com/article/news/nation-world/king-spring-tides-coastal-areas-florida-north-south-carolina-impacts/507-5452387f-b5c9-4685-ad7b-426991845f16",
         "published_at": "2026-10-27T17:34:39Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -557,7 +590,7 @@
         "source_type": "social",
         "url": "https://fed.brid.gy/r/https://www.kgw.com/article/news/nation-world/king-spring-tides-coastal-areas-florida-north-south-carolina-impacts/507-5452387f-b5c9-4685-ad7b-426991845f16",
         "published_at": "2026-10-27T17:34:39Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -568,7 +601,7 @@
         "source_type": "social",
         "url": "https://www.bbc.co.uk/weather/articles/c9e8lmmevd70o?at_medium=RSS&at_campaign=rss",
         "published_at": "2026-10-11T23:03:15Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -579,7 +612,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@earthalerts/117504738421278571",
         "published_at": "2026-10-26T02:00:17Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -590,7 +623,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@top_news/117494912727636463",
         "published_at": "2026-10-24T08:21:29Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -601,7 +634,7 @@
         "source_type": "social",
         "url": "https://roughlydaily.com/2026/10/24/men-argue-nature-acts-3/",
         "published_at": "2026-10-24T08:00:00Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -612,7 +645,7 @@
         "source_type": "social",
         "url": "https://m.ai6yr.org/@uccawx/117492247631232354",
         "published_at": "2026-10-23T21:03:43Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -623,7 +656,7 @@
         "source_type": "social",
         "url": "https://hachyderm.io/@BenjaminHCCarr/117490263065177992",
         "published_at": "2026-10-23T12:39:01Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
@@ -634,19 +667,30 @@
         "source_type": "social",
         "url": "https://fed.brid.gy/r/https://www.kgw.com/article/news/nation-world/noreaster-becomes-subtropical-storm-josephine/507-2c067708-1059-4a9b-bbdd-b096484fcfdc",
         "published_at": "2026-10-21T21:54:29Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:45Z",
         "hashtag": "hurricane"
     },
     {
-        "id": "3adf66a3a54df4a7",
-        "headline": "Offshore nor'easter becomes Subtropical Storm Josephine...",
-        "summary": "Offshore nor'easter becomes Subtropical Storm Josephine https://fed.brid.gy/r/https://www.10tv.com/article/news/nation-world/noreaster-becomes-subtropical-storm-josephine/507-2c067708-1059-4a9b-bbdd-b096484fcfdc",
-        "source": "Mastodon @10tv.com@web.brid.gy",
+        "id": "ef1c21f4f8675e2c",
+        "headline": "Feeding a Cyclone’s Growth In recent years, rapidly intensifying hurricanes and tropical cyclones have caught forecasters off-guard. A new study suggests...",
+        "summary": "Feeding a Cyclone’s Growth In recent years, rapidly intensifying hurricanes and tropical cyclones have caught forecasters off-guard. A new study suggests that sea surface temperature gradients (SSTGs) may provide a clue before storms intensify. By studying years of sea surface temperature measurements from satellites, the authors found that weak SSTGs preceded a storm’s rapid intensification. Tropical storms use warm ocean water as their energy source, but a storm’s winds churn the ocean, pulling up colder water that acts like a brake on a storm’s growth. If the water beneath the storm doesn’t",
+        "source": "Mastodon @admin@fyfluiddynamics.com",
         "source_type": "social",
-        "url": "https://fed.brid.gy/r/https://www.10tv.com/article/news/nation-world/noreaster-becomes-subtropical-storm-josephine/507-2c067708-1059-4a9b-bbdd-b096484fcfdc",
-        "published_at": "2026-10-21T21:54:29Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
-        "hashtag": "hurricane"
+        "url": "https://fyfluiddynamics.com/2026/11/feeding-a-cyclones-growth/",
+        "published_at": "2026-11-12T16:00:00Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
+        "hashtag": "cyclone"
+    },
+    {
+        "id": "6f1309494c246723",
+        "headline": "Today in Labor History November 12, 1970: The 1970 Bhola cyclone made landfall on the coast of East Pakistan (now called Bangladesh). It was the deadliest...",
+        "summary": "Today in Labor History November 12, 1970: The 1970 Bhola cyclone made landfall on the coast of East Pakistan (now called Bangladesh). It was the deadliest tropical cyclone in history. Over 500,000 people died, primarily from the storm surge that flooded much of the low-lying islands of the Ganges Delta. The Pakistani government, led by junta leader General Yahya Khan, delayed & then bungled relief efforts, greatly exacerbating the death toll. Well over 1 million people have died from cyclone-related flooding in Bangladesh over the past 200 years. There have been several cyclones that have kill",
+        "source": "Mastodon @MikeDunnAuthor@kolektiva.social",
+        "source_type": "social",
+        "url": "https://kolektiva.social/@MikeDunnAuthor/117604022492679307",
+        "published_at": "2026-11-12T14:49:32Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
+        "hashtag": "cyclone"
     },
     {
         "id": "902a2d81f116ed04",
@@ -656,7 +700,7 @@
         "source_type": "social",
         "url": "https://techhub.social/@GregCocks/117572956875263733",
         "published_at": "2026-11-07T03:09:08Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -667,7 +711,7 @@
         "source_type": "social",
         "url": "https://c.im/@shonin/117546989411412008",
         "published_at": "2026-11-02T13:05:16Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -678,7 +722,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@remoteviewhq/117540323710395556",
         "published_at": "2026-11-01T08:50:05Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -689,7 +733,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@maldeniya88/117519319456036319",
         "published_at": "2026-10-28T15:48:26Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -700,7 +744,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@maldeniya88/117516924217570982",
         "published_at": "2026-10-28T05:39:17Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -711,7 +755,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@maldeniya88/117516917136029537",
         "published_at": "2026-10-28T05:37:29Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -722,7 +766,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@aseantoday/117515867417591977",
         "published_at": "2026-10-28T01:10:32Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -733,7 +777,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@Mathrubhumi_English/117511217313194469",
         "published_at": "2026-10-27T05:27:57Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -744,7 +788,7 @@
         "source_type": "social",
         "url": "https://vive.im/@flakefood/117510785138219699",
         "published_at": "2026-10-27T03:38:02Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -755,7 +799,7 @@
         "source_type": "social",
         "url": "https://fediscience.org/@JournalCRR/117474447926845392",
         "published_at": "2026-10-20T17:37:01Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -766,7 +810,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@helenwebberley/117461298186690621",
         "published_at": "2026-10-18T09:52:52Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -777,7 +821,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@earthalerts/117452508235590888",
         "published_at": "2026-10-16T20:37:28Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -788,29 +832,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@earthalerts/117439764359265337",
         "published_at": "2026-10-14T14:36:31Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
-        "hashtag": "cyclone"
-    },
-    {
-        "id": "ba38da10fd7fda37",
-        "headline": "At least 4 dead as cyclone Isaias drenches southern U.S. https://phys.org/news/2026-10-dead-cyclone-isaias-drenches-southern.html #UnitedStates #USA #US...",
-        "summary": "At least 4 dead as cyclone Isaias drenches southern U.S. https://phys.org/news/2026-10-dead-cyclone-isaias-drenches-southern.html #UnitedStates #USA #US #environment #weather #cyclone #Isaias",
-        "source": "Mastodon @Dragofix@veganism.social",
-        "source_type": "social",
-        "url": "https://veganism.social/@Dragofix/117436269819840160",
-        "published_at": "2026-10-13T23:47:49Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
-        "hashtag": "cyclone"
-    },
-    {
-        "id": "3fabb0331662c52e",
-        "headline": "📍 TRUDY-26 — Mexico 🕐 Tue 13 Oct 2026 15:15 UTC 🌀 Cyclone Alert 🟡 Moderate 💨 Wind: 213 km/h 🗺️ 10.6, -96.5 👥 Population affected by Category 1 (120 km/h)...",
-        "summary": "📍 TRUDY-26 — Mexico 🕐 Tue 13 Oct 2026 15:15 UTC 🌀 Cyclone Alert 🟡 Moderate 💨 Wind: 213 km/h 🗺️ 10.6, -96.5 👥 Population affected by Category 1 (120 km/h) wind speeds or higher is 22516 🔗 https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001337 #Cyclone #TropicalStorm #Hurricane #EarthAlerts #DisasterAlert #BreakingNews #Environment #Nature #Science #Prepping #Mexico",
-        "source": "Mastodon @earthalerts",
-        "source_type": "social",
-        "url": "https://mastodon.social/@earthalerts/117435600668078708",
-        "published_at": "2026-10-13T20:57:39Z",
-        "scraped_at": "2026-11-12T12:40:31Z",
+        "scraped_at": "2026-11-12T18:25:46Z",
         "hashtag": "cyclone"
     },
     {
@@ -821,7 +843,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@leeralles/117598438751415575",
         "published_at": "2026-11-11T15:09:30Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -832,7 +854,7 @@
         "source_type": "social",
         "url": "https://mstdn.social/@earthquake_monitor/117595491636645147",
         "published_at": "2026-11-11T02:40:01Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -843,7 +865,7 @@
         "source_type": "social",
         "url": "https://mastodon.chrisclark.net/@earthquakebot/117595314618456133",
         "published_at": "2026-11-11T01:55:00Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -854,7 +876,7 @@
         "source_type": "social",
         "url": "https://m.ai6yr.org/@nws_ntwc_bot/117595306572886063",
         "published_at": "2026-11-11T01:52:57Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -865,7 +887,7 @@
         "source_type": "social",
         "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:bwhdf6ejpoklxaprkfh777gn/post/3mzxwgbm3ks2f",
         "published_at": "2026-11-10T17:06:12Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -876,7 +898,7 @@
         "source_type": "social",
         "url": "https://libera.site/item/8b224af3-1233-406d-8402-0df962b7bb57",
         "published_at": "2026-11-10T14:01:33Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -887,7 +909,7 @@
         "source_type": "social",
         "url": "https://mastodon.art/@kittyocean/117587444425793258",
         "published_at": "2026-11-09T16:33:30Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -898,7 +920,7 @@
         "source_type": "social",
         "url": "https://mstdn.social/@kevinrns/117583157348775531",
         "published_at": "2026-11-08T22:23:15Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -909,7 +931,7 @@
         "source_type": "social",
         "url": "https://fed.brid.gy/r/https://www.elnacional.com/2026/11/tsunami-sera-la-mascota-de-los-juegos-juveniles-2026-por-su-noble-labor-tras-los-terremotos/",
         "published_at": "2026-11-08T16:32:46Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -920,7 +942,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@SteveThompson/117579479428250108",
         "published_at": "2026-11-08T06:47:54Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -931,7 +953,7 @@
         "source_type": "social",
         "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:itcjt5iogtepkxhlm7mw2gk6/post/3mzrjfzwbbk22",
         "published_at": "2026-11-08T03:57:27Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -942,7 +964,7 @@
         "source_type": "social",
         "url": "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:itcjt5iogtepkxhlm7mw2gk6/post/3mzqecnz6q22p",
         "published_at": "2026-11-07T16:53:25Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -953,7 +975,7 @@
         "source_type": "social",
         "url": "https://mstdn.social/@kevinrns/117576112559293694",
         "published_at": "2026-11-07T16:31:40Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -964,7 +986,7 @@
         "source_type": "social",
         "url": "https://mastodon.social/@mwcartoons/117574472012381006",
         "published_at": "2026-11-07T09:34:27Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     },
     {
@@ -975,7 +997,7 @@
         "source_type": "social",
         "url": "https://fed.brid.gy/r/https://www.mirror.co.uk/news/world-news/cumbre-vieja-megatsunami-volcano-us-37853496",
         "published_at": "2026-11-07T08:35:56Z",
-        "scraped_at": "2026-11-12T12:40:32Z",
+        "scraped_at": "2026-11-12T18:25:48Z",
         "hashtag": "tsunami"
     }
 ]

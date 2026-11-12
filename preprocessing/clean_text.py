@@ -146,6 +146,10 @@ def clean_records(raw_records, existing=None, now=None):
 
         previous = merged.get(article["id"])
 
+        # Items scraped without a date keep the time they were first seen.
+        if previous and not record.get("published_at"):
+            article["published_at"] = previous["published_at"]
+
         if previous and previous.get("text") == article["text"]:
             for field in PRESERVED_FIELDS:
                 if field in previous:

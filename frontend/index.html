@@ -5,240 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Disastro - Live Disaster Monitor</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<style>
-  :root {
-    --bg: #0f1419; --panel: #182028; --border: #2a3541; --text: #e6edf3; --muted: #8b98a5;
-    --accent: #4da3ff; --high: #ff5c5c; --medium: #ffb347; --low: #5fd38d;
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, "Segoe UI", sans-serif; }
-  header { display: flex; align-items: center; gap: 16px; padding: 12px 20px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
-  header h1 { font-size: 20px; margin: 0; letter-spacing: .5px; }
-  header .status { color: var(--muted); font-size: 12px; margin-left: auto; }
-  button { background: var(--accent); color: #06121f; border: 0; border-radius: 6px; padding: 7px 14px; font-weight: 600; cursor: pointer; }
-  button:disabled { opacity: .5; cursor: default; }
-  select, input[type=text] { background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 7px 10px; font: inherit; }
-  main { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 16px; padding: 16px 20px; }
-  @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
-  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
-  .panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin: 0 0 10px; }
-  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
-  .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px; }
-  .stat .value { font-size: 24px; font-weight: 700; }
-  .stat .label { color: var(--muted); font-size: 12px; }
-  #map { height: 380px; border-radius: 8px; }
-  .column { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
-  .filters { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
-  .list { max-height: 460px; overflow-y: auto; }
-  .event { padding: 9px 0; border-bottom: 1px solid var(--border); }
-  .event:last-child { border-bottom: 0; }
-  .event a { color: var(--text); text-decoration: none; font-weight: 600; }
-  .event a:hover { color: var(--accent); }
-  .meta { color: var(--muted); font-size: 12px; }
-  .badge { display: inline-block; border-radius: 4px; padding: 0 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; color: #10161c; margin-right: 6px; }
-  .badge.high { background: var(--high); } .badge.medium { background: var(--medium); } .badge.low { background: var(--low); }
-  .badge.type { background: var(--border); color: var(--text); }
-  .ask { display: flex; gap: 8px; }
-  .ask input { flex: 1; min-width: 0; }
-  .answer { white-space: pre-wrap; margin-top: 10px; }
-  .empty { color: var(--muted); }
-</style>
+<link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
 <header>
-  <h1>🌍 Disastro</h1>
-  <span class="meta">Live disaster monitor</span>
+  <a class="brand" href="#/">🌍 Disastro</a>
+  <nav id="nav">
+    <a href="#/" data-route="overview">Overview</a>
+    <a href="#/news" data-route="news">News</a>
+    <a href="#/map" data-route="map">Map</a>
+    <a href="#/alerts" data-route="alerts">Alerts <span class="count" id="nav-alerts"></span></a>
+    <a href="#/ask" data-route="ask">Ask</a>
+  </nav>
   <span class="status" id="status"></span>
   <button id="refresh">Refresh data</button>
 </header>
 
-<main>
-  <div class="column">
-    <div class="stats">
-      <div class="stat"><div class="value" id="stat-total">-</div><div class="label">Events tracked</div></div>
-      <div class="stat"><div class="value" id="stat-high" style="color:var(--high)">-</div><div class="label">High severity</div></div>
-      <div class="stat"><div class="value" id="stat-medium" style="color:var(--medium)">-</div><div class="label">Medium severity</div></div>
-      <div class="stat"><div class="value" id="stat-low" style="color:var(--low)">-</div><div class="label">Low severity</div></div>
-    </div>
-
-    <div class="panel">
-      <h2>Event map</h2>
-      <div id="map"></div>
-    </div>
-
-    <div class="panel">
-      <h2>Ask about current disasters</h2>
-      <form class="ask" id="ask-form">
-        <input type="text" id="question" placeholder="e.g. Where are the worst floods right now?">
-        <button id="ask-button">Ask</button>
-      </form>
-      <div class="answer" id="answer"></div>
-      <div class="list" id="answer-sources"></div>
-    </div>
-
-    <div class="panel">
-      <h2>Situation report</h2>
-      <div class="answer" id="report"><span class="empty">No report generated yet.</span></div>
-      <div class="meta" id="report-meta"></div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="panel">
-      <h2>Events</h2>
-      <div class="filters">
-        <select id="filter-type"><option value="">All types</option></select>
-        <select id="filter-severity">
-          <option value="">All severities</option>
-          <option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option>
-        </select>
-        <select id="filter-source">
-          <option value="">All sources</option>
-          <option value="news">News</option><option value="api">Agencies</option><option value="social">Social</option>
-        </select>
-      </div>
-      <div class="list" id="events"></div>
-    </div>
-
-    <div class="panel">
-      <h2>Alerts</h2>
-      <div class="list" id="alerts" style="max-height:260px"></div>
-    </div>
-  </div>
-</main>
+<main id="view"></main>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-const COLORS = { high: "#ff5c5c", medium: "#ffb347", low: "#5fd38d" };
-const $ = (id) => document.getElementById(id);
-
-// Everything shown here was scraped from the web, so it is always escaped.
-function esc(value) {
-  return String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}
-function safeUrl(url) {
-  return /^https?:\/\//i.test(url || "") ? url : "#";
-}
-function when(iso) {
-  return iso ? new Date(iso).toLocaleString() : "";
-}
-async function api(path, options) {
-  const response = await fetch(path, options);
-  if (!response.ok) throw new Error(`${path}: ${response.status}`);
-  return response.json();
-}
-
-function eventHtml(event) {
-  const score = event.score !== undefined ? ` · match ${event.score}` : "";
-  return `<div class="event">
-    <span class="badge ${esc(event.severity)}">${esc(event.severity || "?")}</span><span class="badge type">${esc(event.disaster_type)}</span>
-    <a href="${esc(safeUrl(event.url))}" target="_blank" rel="noopener noreferrer">${esc(event.headline || event.text)}</a>
-    <div class="meta">${esc(event.source)} · ${esc(when(event.published_at))}${esc(score)}</div>
-  </div>`;
-}
-
-const map = L.map("map", { worldCopyJump: true }).setView([20, 10], 2);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 10, attribution: "&copy; OpenStreetMap contributors",
-}).addTo(map);
-const markers = L.layerGroup().addTo(map);
-
-function drawMap(events) {
-  markers.clearLayers();
-  for (const event of events) {
-    if (typeof event.latitude !== "number" || typeof event.longitude !== "number") continue;
-    L.circleMarker([event.latitude, event.longitude], {
-      radius: event.severity === "high" ? 9 : event.severity === "medium" ? 7 : 5,
-      color: COLORS[event.severity] || "#8b98a5", fillOpacity: 0.6, weight: 1,
-    }).bindPopup(eventHtml(event)).addTo(markers);
-  }
-}
-
-async function loadEvents() {
-  const params = new URLSearchParams({ limit: 500 });
-  if ($("filter-type").value) params.set("disaster_type", $("filter-type").value);
-  if ($("filter-severity").value) params.set("severity", $("filter-severity").value);
-  if ($("filter-source").value) params.set("source_type", $("filter-source").value);
-  const data = await api(`/api/events?${params}`);
-  $("events").innerHTML = data.events.map(eventHtml).join("") ||
-    '<div class="empty">No events yet. Click "Refresh data" to run the pipeline.</div>';
-  drawMap(data.events);
-}
-
-async function loadStats() {
-  const stats = await api("/api/stats");
-  $("stat-total").textContent = stats.total;
-  for (const level of ["high", "medium", "low"]) $(`stat-${level}`).textContent = stats.by_severity[level] || 0;
-
-  const select = $("filter-type"), current = select.value;
-  select.innerHTML = '<option value="">All types</option>' + Object.entries(stats.by_type)
-    .sort((a, b) => b[1] - a[1])
-    .map(([type, count]) => `<option value="${esc(type)}">${esc(type)} (${count})</option>`).join("");
-  select.value = current;
-
-  const running = stats.pipeline.running;
-  $("refresh").disabled = running;
-  $("status").textContent = running ? "Pipeline running..." : stats.latest ? `Latest event: ${when(stats.latest)}` : "";
-  return running;
-}
-
-async function loadAlerts() {
-  const data = await api("/api/alerts");
-  $("alerts").innerHTML = data.alerts.map(eventHtml).join("") || '<div class="empty">No alerts.</div>';
-}
-
-async function loadReport() {
-  const report = await api("/api/report");
-  if (!report.answer) return;
-  $("report").textContent = report.answer;
-  $("report-meta").textContent = `Generated ${when(report.generated_at)} by ${report.backend}`;
-}
-
-async function loadAll() {
-  const running = await loadStats();
-  await Promise.all([loadEvents(), loadAlerts(), loadReport()]);
-  return running;
-}
-
-async function pollPipeline() {
-  const running = await loadStats();
-  if (running) setTimeout(pollPipeline, 5000);
-  else loadAll();
-}
-
-$("refresh").addEventListener("click", async () => {
-  $("refresh").disabled = true;
-  await api("/api/refresh", { method: "POST" });
-  pollPipeline();
-});
-
-for (const id of ["filter-type", "filter-severity", "filter-source"]) $(id).addEventListener("change", loadEvents);
-
-$("ask-form").addEventListener("submit", async (submit) => {
-  submit.preventDefault();
-  const question = $("question").value.trim();
-  if (!question) return;
-  $("ask-button").disabled = true;
-  $("answer").textContent = "Thinking... (a local model can take a minute)";
-  $("answer-sources").innerHTML = "";
-  try {
-    const result = await api("/api/ask", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ question }),
-    });
-    $("answer").textContent = result.answer;
-    $("answer-sources").innerHTML = result.sources.map(eventHtml).join("");
-  } catch (error) {
-    $("answer").textContent = `Request failed: ${error.message}`;
-  }
-  $("ask-button").disabled = false;
-});
-
-loadAll().then((running) => { if (running) pollPipeline(); })
-  .catch((error) => { $("status").textContent = `Failed to load: ${error.message}`; });
-setInterval(() => loadAll().catch(() => {}), 120000);
-</script>
+<script src="/static/app.js"></script>
 </body>
 </html>

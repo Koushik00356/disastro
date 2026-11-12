@@ -197,6 +197,17 @@ def test_clean_records_keeps_existing_severity():
     assert second[0]["severity"] == "high"
 
 
+def test_undated_records_keep_first_seen_time():
+    first = clean_records(
+        [{"headline": "Floods hit town", "source": "BBC News", "scraped_at": "2026-11-11T08:00:00Z"}], now=NOW
+    )
+    second = clean_records(
+        [{"headline": "Floods hit town", "source": "BBC News", "scraped_at": "2026-11-12T08:00:00Z"}],
+        existing=first, now=NOW,
+    )
+    assert second[0]["published_at"] == "2026-11-11T08:00:00Z"
+
+
 def test_severity():
     assert structured_severity({"alert_level": "red"}) == "high"
     assert structured_severity({"disaster_type": "earthquake", "magnitude": 4.8}) == "low"

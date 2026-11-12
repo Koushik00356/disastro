@@ -29,7 +29,8 @@ rag/                retrieve relevant reports and generate an answer
                     (Ollama -> flan-t5-small -> extractive fallback)
 
 backend/            FastAPI REST API
-frontend/           dashboard: map, event list, alerts, question box
+frontend/           dashboard pages rendered from the API: overview, news feed,
+                    one page per disaster type and per event, map, alerts, ask
 scheduler/          runs the pipeline every N minutes
 ```
 
@@ -81,8 +82,9 @@ how fast your machine runs the language model. Only new records are embedded.
 
 | Method | Path | Description |
 | --- | --- | --- |
-| GET | `/api/events` | Events; filter with `disaster_type`, `severity`, `source_type`, `limit` |
-| GET | `/api/stats` | Counts by severity, type and source, plus pipeline status |
+| GET | `/api/events` | Events; filter with `disaster_type`, `severity`, `source_type`, `source`, `q` (words), `located`, `limit`, `offset` |
+| GET | `/api/events/{id}` | One event plus its most similar stored reports |
+| GET | `/api/stats` | Counts by severity, type, source and day, plus pipeline status |
 | GET | `/api/search?q=` | Semantic search |
 | POST | `/api/ask` | RAG answer: `{"question": "..."}` |
 | GET | `/api/report` | Latest situation report |

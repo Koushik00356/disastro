@@ -8,6 +8,7 @@ from collections import Counter
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 import config
@@ -15,6 +16,8 @@ from utils.helpers import load_json, now_iso
 
 
 app = FastAPI(title="Disastro", description="Live disaster monitoring with RAG")
+
+app.mount("/static", StaticFiles(directory=config.FRONTEND_DIR / "static"), name="static")
 
 
 pipeline_state = {"running": False, "last_run": None, "last_ok": None}
@@ -54,8 +57,13 @@ def list_events(
     disaster_type: str | None = None,
     severity: str | None = None,
     source_type: str | None = None,
+    source: str | None = None,
+    q: str | None = None,
+    located: bool = False,
     limit: int = Query(200, ge=1, le=1000),
+    offset: int = Query(0, ge=0),
 ):
+    """Events, newest first. `q` matches words in the text, `located` keeps mapped events."""
 
     events = load_events()
 
@@ -63,11 +71,36 @@ def list_events(
         ("disaster_type", disaster_type),
         ("severity", severity),
         ("source_type", source_type),
+        ("source", source),
     ):
         if value:
             events = [event for event in events if event.get(field) == value]
 
-    return {"count": len(events), "events": events[:limit]}
+    if q:
+        words = q.lower().split()
+        events = [
+            event for event in events
+            if all(word in event["text"].lower() for word in words)
+        ]
+
+    if located:
+        events = [event for event in events if event.get("latitude") is not None]
+
+    return {"count": len(events), "events": events[offset:offset + limit]}
+
+
+@app.get("/api/events/{event_id}")
+def get_event(event_id: str):
+    """One event plus the stored reports most similar to it."""
+
+    from vectordb.search import similar
+
+    event = next((event for event in load_events() if event["id"] == event_id), None)
+
+    if event is None:
+        raise HTTPException(status_code=404, detail="Event not found.")
+
+    return {"event": event, "related": similar(event_id, n_results=6)}
 
 
 @app.get("/api/stats")
@@ -75,11 +108,23 @@ def stats():
 
     events = load_events()
 
+    by_type = {}
+
+    for event in events:
+        counts = by_type.setdefault(
+            event["disaster_type"], {"total": 0, "high": 0, "medium": 0, "low": 0}
+        )
+        counts["total"] += 1
+        if event.get("severity") in counts:
+            counts[event["severity"]] += 1
+
     return {
         "total": len(events),
         "by_severity": Counter(event.get("severity") or "unclassified" for event in events),
-        "by_type": Counter(event["disaster_type"] for event in events),
+        "by_type": by_type,
         "by_source_type": Counter(event["source_type"] for event in events),
+        "by_day": dict(sorted(Counter(event["published_at"][:10] for event in events).items())),
+        "top_sources": Counter(event["source"] for event in events).most_common(10),
         "latest": events[0]["published_at"] if events else None,
         "pipeline": pipeline_state,
     }

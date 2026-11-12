@@ -27,19 +27,7 @@ def build_filter(disaster_type=None, severity=None, source_type=None):
     return conditions[0] if len(conditions) == 1 else {"$and": conditions}
 
 
-def search(query, n_results=5, **filters):
-    """Return the records most similar to the query, best match first."""
-
-    collection = get_collection()
-
-    if collection.count() == 0:
-        return []
-
-    results = collection.query(
-        query_embeddings=embed_texts([query]),
-        n_results=n_results,
-        where=build_filter(**filters),
-    )
+def format_hits(results):
 
     hits = []
 
@@ -60,6 +48,41 @@ def search(query, n_results=5, **filters):
         )
 
     return hits
+
+
+def search(query, n_results=5, **filters):
+    """Return the records most similar to the query, best match first."""
+
+    collection = get_collection()
+
+    if collection.count() == 0:
+        return []
+
+    results = collection.query(
+        query_embeddings=embed_texts([query]),
+        n_results=n_results,
+        where=build_filter(**filters),
+    )
+
+    return format_hits(results)
+
+
+def similar(doc_id, n_results=5):
+    """Return the records closest to a stored record, using its stored embedding."""
+
+    collection = get_collection()
+
+    stored = collection.get(ids=[doc_id], include=["embeddings"])
+
+    if not stored["ids"]:
+        return []
+
+    results = collection.query(
+        query_embeddings=[stored["embeddings"][0]],
+        n_results=n_results + 1,
+    )
+
+    return [hit for hit in format_hits(results) if hit["id"] != doc_id][:n_results]
 
 
 if __name__ == "__main__":
