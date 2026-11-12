@@ -1,94 +1,32 @@
-import schedule
+"""Run the whole pipeline on a schedule.
+
+Run directly with:  python -m scheduler.live_scraper
+"""
+
 import time
-import subprocess
-import sys
-from datetime import datetime
-print(sys.executable)
-PYTHON_PATH = r"C:\Users\koush\disastro_model\ai_env\Scripts\python.exe"
+
+import schedule
+
+import config
+from pipeline import run_pipeline
 
 
-def run_pipeline():
+def start(interval_minutes=None, with_report=True):
 
-    print("\n========================")
-    print("PIPELINE STARTED")
-    print("Time:", datetime.now())
-    print("========================\n")
+    interval_minutes = interval_minutes or config.SCHEDULE_INTERVAL_MINUTES
 
-    subprocess.run(
-    [
-        PYTHON_PATH,
-        "-c",
-        "import sys; print(sys.executable)"
-    ]
-    )
-    print("STEP 1 : SCRAPING")
-    subprocess.run(
-        [
-            "scrapy",
-            "crawl",
-            "bbc_news",
-            "-O",
-            "disastro_scraper/bbc_news.json"
-        ]
-    )
+    schedule.every(interval_minutes).minutes.do(run_pipeline, with_report=with_report)
+
+    print(f"AI pipeline started... (every {interval_minutes} minutes, Ctrl+C to stop)")
+
+    run_pipeline(with_report=with_report)
+
+    while True:
+
+        schedule.run_pending()
+
+        time.sleep(1)
 
 
-    print("STEP 2 : CLEANING")
-    subprocess.run(
-        [
-            PYTHON_PATH,
-            "-u",
-            "preprocessing/clean_text.py"
-        ]
-    )
-
-
-    print("STEP 3 : EMBEDDINGS")
-    subprocess.run(
-        [
-            PYTHON_PATH,
-            "-u",
-            "embeddings/generate_embedding.py"
-        ]
-    )
-
-
-    print("STEP 4 : VECTOR STORAGE")
-    subprocess.run(
-        [
-            PYTHON_PATH,
-            "-u",
-            "vectordb/store_embedding.py"
-        ]
-    )
-
-
-    print("STEP 5 : RAG GENERATION")
-    subprocess.run(
-        [
-            PYTHON_PATH,
-            "-u",
-            "rag/rag_pipeline.py"
-        ]
-    )
-
-
-    print("\n========================")
-    print("PIPELINE FINISHED")
-    print("Time:", datetime.now())
-    print("========================\n")
-
-
-schedule.every(1).minutes.do(run_pipeline)
-
-print("AI pipeline started...")
-
-
-run_pipeline()
-
-
-while True:
-
-    schedule.run_pending()
-
-    time.sleep(1)
+if __name__ == "__main__":
+    start()

@@ -1,40 +1,88 @@
-import json
-from sentence_transformers import SentenceTransformer
+"""Generate sentence embeddings for the cleaned records.
+
+Embeddings already computed for an unchanged text are reused, so each run
+only encodes new records.
+
+Run directly with:  python -m embeddings.generate_embedding
+"""
+
+import config
+from utils.helpers import get_logger, load_json, save_json
 
 
-INPUT_FILE = "data/cleaned/cleaned_news.json"
-OUTPUT_FILE = "data/embedding_data/news_embeddings.json"
+log = get_logger("embeddings")
 
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+_model = None
 
 
-with open(INPUT_FILE, "r", encoding="utf-8") as f:
-    articles = json.load(f)
+def get_model():
+
+    global _model
+
+    if _model is None:
+        from sentence_transformers import SentenceTransformer
+
+        _model = SentenceTransformer(config.EMBEDDING_MODEL)
+
+    return _model
 
 
-texts = [article["cleaned_headline"] for article in articles]
+def embed_texts(texts):
+
+    embeddings = get_model().encode(texts, normalize_embeddings=True)
+
+    return [embedding.tolist() for embedding in embeddings]
 
 
-embeddings = model.encode(texts)
+def generate_embeddings(articles, existing=None):
 
-
-output_data = []
-
-
-for article, embedding in zip(articles, embeddings):
-
-    article_data = {
-        "headline": article["headline"],
-        "cleaned_headline": article["cleaned_headline"],
-        "embedding": embedding.tolist()
+    cached = {
+        item["id"]: item["embedding"]
+        for item in (existing or [])
+        if "id" in item and item.get("text")
     }
+    cached_text = {item["id"]: item["text"] for item in (existing or []) if "id" in item and item.get("text")}
 
-    output_data.append(article_data)
+    new_articles = [
+        article for article in articles if cached_text.get(article["id"]) != article["text"]
+    ]
+
+    if new_articles:
+        new_embeddings = embed_texts([article["text"] for article in new_articles])
+
+        for article, embedding in zip(new_articles, new_embeddings):
+            cached[article["id"]] = embedding
+
+    output_data = []
+
+    for article in articles:
+
+        article_data = {
+            "id": article["id"],
+            "headline": article["headline"],
+            "cleaned_headline": article["cleaned_headline"],
+            "text": article["text"],
+            "embedding": cached[article["id"]],
+        }
+
+        output_data.append(article_data)
+
+    return output_data, len(new_articles)
 
 
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    json.dump(output_data, f, indent=4)
+def run():
+
+    articles = load_json(config.CLEANED_FILE)
+
+    output_data, new_count = generate_embeddings(articles, existing=load_json(config.EMBEDDINGS_FILE))
+
+    save_json(config.EMBEDDINGS_FILE, output_data, indent=None)
+
+    log.info("Embeddings generated: %d total, %d new.", len(output_data), new_count)
+
+    return output_data
 
 
-print("Embeddings generated.")
+if __name__ == "__main__":
+    run()
