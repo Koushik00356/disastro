@@ -18,8 +18,8 @@ scraper/            news (BBC, Guardian, Al Jazeera, Google News RSS)
 preprocessing/      keep disaster-related items, tag disaster type, clean text,
       |             de-duplicate, drop items older than 7 days
       |             -> data/cleaned/cleaned_news.json
-summarizer/         low / medium / high severity (agency data, then zero-shot
-      |             classification with bart-large-mnli, then keyword rules)
+summarizer/         low / medium / high severity (agency alert level, magnitude
+      |             and wind speed; keyword rules for everything else)
 embeddings/         sentence embeddings (all-MiniLM-L6-v2)
       |             -> data/embedding_data/news_embeddings.json
 vectordb/           ChromaDB storage + semantic search
@@ -46,8 +46,7 @@ ai_env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-The embedding and classification models download from Hugging Face on first use
-(about 1.7 GB).
+The embedding model (about 90 MB) downloads from Hugging Face on first use.
 
 For good quality answers, install [Ollama](https://ollama.com) and pull a model:
 
@@ -75,8 +74,8 @@ python main.py serve                 # dashboard at http://127.0.0.1:8000
 Each stage can also be run on its own, for example
 `python -m scraper.api_fetcher` or `python -m preprocessing.clean_text`.
 
-The first pipeline run is the slowest: it classifies every record with the
-zero-shot model on CPU. Later runs only process new records.
+A pipeline run takes about a minute plus the situation report, which depends on
+how fast your machine runs the language model. Only new records are embedded.
 
 ### API
 
@@ -98,7 +97,7 @@ Edit `config.py`, or set these environment variables:
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
-| `DISASTRO_SEVERITY_MODE` | `zero-shot` | `rules` skips the model and uses fast keyword rules |
+| `DISASTRO_SEVERITY_MODE` | `rules` | `zero-shot` classifies text with `bart-large-mnli` instead (slow on CPU, and in testing it rated nearly every headline the same level) |
 | `DISASTRO_INTERVAL_MINUTES` | `30` | Scheduler interval |
 | `DISASTRO_ALERT_WEBHOOK` | *(unset)* | URL that receives each new alert as a JSON POST |
 | `OLLAMA_URL` | `http://localhost:11434` | Ollama server |
@@ -128,5 +127,6 @@ The tests run offline against sample payloads.
   headline ("a storm of criticism") can slip through.
 - Only agency events carry coordinates; news items are not geocoded and do not
   appear on the map.
-- Severity for news comes from a general-purpose zero-shot model and is a rough
-  guide, not an official assessment.
+- Severity for news and social posts comes from keyword rules ("killed",
+  "evacuated", ...) and is a rough guide, not an official assessment. Alerts
+  are raised only from news and agency sources.

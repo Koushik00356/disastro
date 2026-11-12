@@ -31,6 +31,9 @@ def get_logger(name):
             datefmt="%H:%M:%S",
         )
 
+        # The Hugging Face client logs every HTTP request at INFO level.
+        logging.getLogger("httpx").setLevel(logging.WARNING)
+
     return logger
 
 

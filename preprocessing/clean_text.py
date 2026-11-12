@@ -30,6 +30,13 @@ DISASTER_PATTERNS = {
     for disaster_type, keywords in config.DISASTER_KEYWORDS.items()
 }
 
+NON_DISASTER_PATTERN = re.compile(
+    r"\b(?:" + "|".join(config.NON_DISASTER_PATTERNS) + r")", re.IGNORECASE
+)
+SOCIAL_SIGNAL_PATTERN = re.compile(
+    r"\b(?:" + "|".join(config.SOCIAL_SIGNAL_PATTERNS) + r")\b", re.IGNORECASE
+)
+
 # Fields computed by later stages that must survive a re-scrape of the same item.
 PRESERVED_FIELDS = ("severity", "severity_score", "severity_method")
 
@@ -47,6 +54,9 @@ def clean_headline(headline):
 
 def detect_disaster_type(text):
     """Return the first disaster type whose keywords appear in the text, else None."""
+
+    if NON_DISASTER_PATTERN.search(text):
+        return None
 
     for disaster_type, pattern in DISASTER_PATTERNS.items():
 
@@ -81,16 +91,25 @@ def normalize_record(record):
     article["scraped_at"] = normalize_date(record.get("scraped_at")) or now_iso()
     article["published_at"] = normalize_date(record.get("published_at")) or article["scraped_at"]
 
-    if not article.get("disaster_type"):
-        article["disaster_type"] = detect_disaster_type(f"{headline} {summary}")
+    # Text that gets embedded: headline plus summary when it adds something.
+    if not summary or summary == headline:
+        article["text"] = headline
+    elif summary.startswith(headline.rstrip(".")):
+        article["text"] = summary
+    else:
+        article["text"] = f"{headline}. {summary}"
 
-    if not article["disaster_type"]:
+    # Agency events arrive with a type; everything else is tagged by keyword.
+    if article["source_type"] != "api":
+        article["disaster_type"] = detect_disaster_type(article["text"])
+
+    if not article.get("disaster_type"):
+        return None
+
+    if article["source_type"] == "social" and not SOCIAL_SIGNAL_PATTERN.search(article["text"]):
         return None
 
     article["cleaned_headline"] = clean_headline(headline)
-
-    # Text that gets embedded: headline plus summary when it adds something.
-    article["text"] = headline if not summary or summary == headline else f"{headline}. {summary}"
 
     return article
 

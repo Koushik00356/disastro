@@ -1,0 +1,54 @@
+[
+    {
+        "id": "78a8479de4c99b82",
+        "headline": "'It can kill us': Kenyans fear impact of El Niño with floods predicted",
+        "disaster_type": "flood",
+        "severity": "high",
+        "source": "BBC News",
+        "url": "https://www.bbc.com/news/articles/c8wy9y37z30vo",
+        "published_at": "2026-11-12T12:06:43Z",
+        "location": null,
+        "latitude": null,
+        "longitude": null,
+        "alerted_at": "2026-11-12T12:07:32Z"
+    },
+    {
+        "id": "246830ad1b93b323",
+        "headline": "Gaza struck by deadly storm; Israel debates rare coalition with Palestinian citizens",
+        "disaster_type": "storm",
+        "severity": "high",
+        "source": "NPR",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNelVvSExVbm1SOFhwbklGMUptY2Y1M0pMSU5JSktQWkpsMU03VENsbUlDS2VWNGhmRE5qdzMzYS1tSFhha1hhbkZkMlVfR1lfb292NTA2VWVubHdhQUVFZ2Fndnd6enhzdTJLRWt5UHRwMmdtYWp6T3d3eDhvYW05dWNPa2ZTY3FXWTZ1ZERuYU9NYzcyOE5IakFkRWxHUThacWVmXzVpM2s2VTRzeWh4RkZuOE1RbWpTUnc4VzlfZ3lucGNXdWM4?oc=5",
+        "published_at": "2026-11-12T00:19:45Z",
+        "location": null,
+        "latitude": null,
+        "longitude": null,
+        "alerted_at": "2026-11-12T12:07:32Z"
+    },
+    {
+        "id": "7efd10d7de635a27",
+        "headline": "Misery for Thousands in Gaza as Tents Flood: IOM Warns of Further Hardship as Winter Deepens",
+        "disaster_type": "flood",
+        "severity": "high",
+        "source": "International Organization for Migration",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUWJCdUR2WXBBNXlVQVlSdmN1THdmQWNlQnlwMzk1eDhDY21xMWNjMnpUVE05bzk3bWFxcGdwUVBBNVlPZS1WcWNSTVVVOEtUT1hUVEQzZ0FaSHNnVkY3VGo4ejZCenUyZTB2b0NocDA3ZWlocHRzXzRzZ0pReXpGaG0yLVZmSTFxYjB0UEV4M2pHTzY2ZmtyZXRQamVTbnpjN2c?oc=5",
+        "published_at": "2026-11-11T22:36:12Z",
+        "location": null,
+        "latitude": null,
+        "longitude": null,
+        "alerted_at": "2026-11-12T12:07:32Z"
+    },
+    {
+        "id": "6e7714057218fbf4",
+        "headline": "Napa Valley winery sued after worker allegedly started wildfire that destroyed harvests",
+        "disaster_type": "wildfire",
+        "severity": "high",
+        "source": "The Independent",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdHZ1WlA5YjduQ1o0V2JhY1NpOGEtU0tkU3hVLVN0SGZ5TF9jMEx2cWMwNVBhbm1xMlJuVXQwN01mazJKQ0FiR01IM2o1WHpTS3lIdXBUNnVCa1lNWEhxYzZZbUJ3bTdXbC1CT3dONFZ5Y1NDZUtvVDdnakRQNDJUS3Q3bHhsUFBYcEFVNXRhQWxiaXNoTUd6OFYwRGhEOWhkWjFMeXlfQUU5V091RGMwQw?oc=5",
+        "published_at": "2026-11-11T14:50:00Z",
+        "location": null,
+        "latitude": null,
+        "longitude": null,
+        "alerted_at": "2026-11-12T12:07:32Z"
+    }
+]

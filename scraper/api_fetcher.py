@@ -120,13 +120,7 @@ def parse_usgs(payload):
 
 def parse_gdacs(xml_text):
 
-    try:
-        root = ET.fromstring(xml_text)
-    except ET.ParseError:
-        # The live feed regularly contains invalid characters; lxml can skip them.
-        from lxml import etree
-
-        root = etree.fromstring(xml_text, etree.XMLParser(recover=True))
+    root = ET.fromstring(xml_text)
 
     events = []
 
@@ -199,6 +193,7 @@ def parse_eonet(payload):
                 published_at=normalize_date(geometry.get("date")),
                 latitude=coords[1] if coords else None,
                 longitude=coords[0] if coords else None,
+                wind_kts=geometry.get("magnitudeValue") if geometry.get("magnitudeUnit") == "kts" else None,
             )
         )
 

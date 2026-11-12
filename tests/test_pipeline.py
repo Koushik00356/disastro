@@ -152,6 +152,19 @@ def test_detect_disaster_type():
     assert detect_disaster_type("Bushfires rage in Australia") == "wildfire"
     assert detect_disaster_type("Rubio says Cuba is threat to US") is None
     assert detect_disaster_type("Minister fired over leak") is None
+    assert detect_disaster_type("Republicans assess damage from 'blue tsunami'") is None
+    assert detect_disaster_type("Party wins by a landslide") is None
+    assert detect_disaster_type("Cyclone hoops preview: Iowa State at home") is None
+    assert detect_disaster_type("Flood of the century hits Valencia") == "flood"
+
+
+def test_social_posts_need_an_event_signal():
+    posts = [
+        raw("Love this song #hurricane #rock", source_type="social"),
+        raw("Flash flood warning issued for the valley", source_type="social"),
+    ]
+    cleaned = clean_records(posts, now=NOW)
+    assert [a["headline"] for a in cleaned] == ["Flash flood warning issued for the valley"]
 
 
 def test_clean_headline():
@@ -198,17 +211,19 @@ def test_severity():
     records = [
         {"text": "M 7.0 quake", "disaster_type": "earthquake", "magnitude": 7.0},
         {"text": "Residents evacuated as river rises", "disaster_type": "flood"},
-        {"text": "anything", "disaster_type": "flood", "severity": "low"},
+        {"text": "Typhoon", "disaster_type": "cyclone", "wind_kts": 100},
+        {"text": "Floods kill 12", "disaster_type": "flood", "severity": "low", "severity_method": "zero-shot"},
     ]
     classify_records(records, mode="rules")
-    assert [r["severity"] for r in records] == ["high", "medium", "low"]
+    assert [r["severity"] for r in records] == ["high", "medium", "high", "high"]
     assert records[0]["severity_method"] == "structured"
 
 
 def test_alerts_fire_once():
     records = [
-        {"id": "a", "headline": "Big quake", "severity": "high", "disaster_type": "earthquake", "source": "USGS"},
-        {"id": "b", "headline": "Small quake", "severity": "low", "disaster_type": "earthquake", "source": "USGS"},
+        {"id": "a", "headline": "Big quake", "severity": "high", "disaster_type": "earthquake", "source": "USGS", "source_type": "api"},
+        {"id": "b", "headline": "Small quake", "severity": "low", "disaster_type": "earthquake", "source": "USGS", "source_type": "api"},
+        {"id": "c", "headline": "OMG huge quake", "severity": "high", "disaster_type": "earthquake", "source": "Mastodon", "source_type": "social"},
     ]
     alerts, new_alerts = process_alerts(records)
     assert [a["id"] for a in new_alerts] == ["a"]

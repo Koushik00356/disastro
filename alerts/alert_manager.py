@@ -1,4 +1,4 @@
-"""Raise an alert for every new high severity event.
+"""Raise an alert for every new high severity event from news or agency sources.
 
 Alerts are appended to data/alerts/alerts.json (each event alerts once) and,
 when DISASTRO_ALERT_WEBHOOK is set, POSTed to that URL as JSON.
@@ -49,7 +49,9 @@ def process_alerts(records, existing=None):
     new_alerts = [
         build_alert(record)
         for record in records
-        if record.get("severity") == "high" and record["id"] not in alerted_ids
+        if record.get("severity") == "high"
+        and record.get("source_type") in config.ALERT_SOURCE_TYPES
+        and record["id"] not in alerted_ids
     ]
 
     return new_alerts + alerts, new_alerts

@@ -1,9 +1,9 @@
 """Assign a low / medium / high severity to every cleaned record.
 
-Three signals are used, in this order:
-    1. Structured data from the APIs (alert level, earthquake magnitude).
-    2. Zero-shot classification of the text with facebook/bart-large-mnli.
-    3. Keyword rules, when the model is disabled or cannot be loaded.
+Signals, in this order:
+    1. Structured data from the APIs (alert level, magnitude, wind speed).
+    2. Keyword rules on the text (the default), or zero-shot classification
+       with facebook/bart-large-mnli when DISASTRO_SEVERITY_MODE=zero-shot.
 
 Run directly with:  python -m summarizer.severity_classifier
 """
@@ -57,6 +57,11 @@ def structured_severity(record):
         else:
             levels.append("low")
 
+    # Tropical cyclone wind speed: hurricane force from 64 kt, major from 96 kt.
+    wind = record.get("wind_kts")
+    if isinstance(wind, (int, float)):
+        levels.append("high" if wind >= 96 else "medium" if wind >= 64 else "low")
+
     if not levels:
         return None
 
@@ -101,7 +106,11 @@ def zero_shot_severity(texts):
 
 
 def classify_records(records, mode=None):
-    """Fill in severity for records that do not have one yet (modifies them in place)."""
+    """Assign a severity to every record (modifies them in place).
+
+    Zero-shot results are slow to compute, so in zero-shot mode they are kept
+    from earlier runs; the cheap structured and rule results are recomputed.
+    """
 
     mode = mode or config.SEVERITY_MODE
 
@@ -109,7 +118,7 @@ def classify_records(records, mode=None):
 
     for record in records:
 
-        if record.get("severity"):
+        if mode == "zero-shot" and record.get("severity_method") == "zero-shot":
             continue
 
         severity = structured_severity(record)

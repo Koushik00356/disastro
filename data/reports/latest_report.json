@@ -1,0 +1,86 @@
+{
+    "question": "What are the most serious ongoing disasters right now?",
+    "answer": "Based on the reports, the most serious ongoing disasters right now are:\n\n1. Floods in Kenya and Gaza: Reports 1, 2, and 4 indicate high severity floods in these locations, with reports of fatalities and widespread damage.\n2. Floods in Arizona: Report 3 from the National Weather Service (NWS) warns of high severity flooding in Arizona, with the potential for fatalities if people do not heed the warning.\n\nNote that reports 5 and 6 do not provide information on ongoing disasters, and report 6 is actually about a past wildfire incident.",
+    "backend": "ollama:llama3",
+    "sources": [
+        {
+            "id": "78a8479de4c99b82",
+            "text": "'It can kill us': Kenyans fear impact of El Niño with floods predicted",
+            "score": 0.477,
+            "disaster_type": "flood",
+            "severity": "high",
+            "published_at": "2026-11-12T12:06:43Z",
+            "headline": "'It can kill us': Kenyans fear impact of El Niño with floods predicted",
+            "url": "https://www.bbc.com/news/articles/c8wy9y37z30vo",
+            "source_type": "news",
+            "severity_score": 0.5,
+            "source": "BBC News"
+        },
+        {
+            "id": "e5731226a5dd247a",
+            "text": "#Children among the dead as heavy rains #flood tents and shelters in #Gaza https://news.un.org/feed/view/en/story/2026/11/1168766",
+            "score": 0.398,
+            "url": "https://mstdn.science/@GMIK69/117591413133581091",
+            "severity_score": 0.5,
+            "disaster_type": "flood",
+            "source": "Mastodon @GMIK69@mstdn.science",
+            "published_at": "2026-11-10T09:22:48Z",
+            "source_type": "social",
+            "headline": "#Children among the dead as heavy rains #flood tents and shelters in #Gaza https://news.un.org/feed/view/en/story/2026/11/1168766",
+            "severity": "high"
+        },
+        {
+            "id": "f9fa2c9e59fb8e18",
+            "text": "Flood Warning Flood Warning issued November 9 at 9:38AM MST until November 11 at 11:00AM MST by NWS Phoenix AZ Effective 9:38 AM MST, Mon Nov 9 through 11:00 AM MST, Wed Nov 11 Turn around, don't drown when encountering flooded roads. Most flood deaths occur in vehicles. Be aware of your surroundings and do not drive on flooded roads. Flooding is occurring. It is important to know where you are relative to streams, rivers, or creeks.… https://www.weather.gov/psr/ #Flood #FloodWarning",
+            "score": 0.398,
+            "source_type": "social",
+            "source": "Mastodon @phoenixwxalerts@msto.cx",
+            "url": "https://msto.cx/@phoenixwxalerts/117587470297315132",
+            "disaster_type": "flood",
+            "published_at": "2026-11-09T16:40:05Z",
+            "headline": "Flood Warning Flood Warning issued November 9 at 9:38AM MST until November 11 at 11:00AM MST by NWS Phoenix AZ Effective 9:38 AM MST, Mon Nov 9 through...",
+            "severity_score": 0.5,
+            "severity": "high"
+        },
+        {
+            "id": "7efd10d7de635a27",
+            "text": "Misery for Thousands in Gaza as Tents Flood: IOM Warns of Further Hardship as Winter Deepens",
+            "score": 0.36,
+            "source": "International Organization for Migration",
+            "published_at": "2026-11-11T22:36:12Z",
+            "severity_score": 0.5,
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUWJCdUR2WXBBNXlVQVlSdmN1THdmQWNlQnlwMzk1eDhDY21xMWNjMnpUVE05bzk3bWFxcGdwUVBBNVlPZS1WcWNSTVVVOEtUT1hUVEQzZ0FaSHNnVkY3VGo4ejZCenUyZTB2b0NocDA3ZWlocHRzXzRzZ0pReXpGaG0yLVZmSTFxYjB0UEV4M2pHTzY2ZmtyZXRQamVTbnpjN2c?oc=5",
+            "headline": "Misery for Thousands in Gaza as Tents Flood: IOM Warns of Further Hardship as Winter Deepens",
+            "source_type": "news",
+            "severity": "high",
+            "disaster_type": "flood"
+        },
+        {
+            "id": "246830ad1b93b323",
+            "text": "Gaza struck by deadly storm; Israel debates rare coalition with Palestinian citizens",
+            "score": 0.277,
+            "disaster_type": "storm",
+            "source_type": "news",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNelVvSExVbm1SOFhwbklGMUptY2Y1M0pMSU5JSktQWkpsMU03VENsbUlDS2VWNGhmRE5qdzMzYS1tSFhha1hhbkZkMlVfR1lfb292NTA2VWVubHdhQUVFZ2Fndnd6enhzdTJLRWt5UHRwMmdtYWp6T3d3eDhvYW05dWNPa2ZTY3FXWTZ1ZERuYU9NYzcyOE5IakFkRWxHUThacWVmXzVpM2s2VTRzeWh4RkZuOE1RbWpTUnc4VzlfZ3lucGNXdWM4?oc=5",
+            "published_at": "2026-11-12T00:19:45Z",
+            "headline": "Gaza struck by deadly storm; Israel debates rare coalition with Palestinian citizens",
+            "severity_score": 0.5,
+            "source": "NPR",
+            "severity": "high"
+        },
+        {
+            "id": "6e7714057218fbf4",
+            "text": "Napa Valley winery sued after worker allegedly started wildfire that destroyed harvests",
+            "score": 0.115,
+            "headline": "Napa Valley winery sued after worker allegedly started wildfire that destroyed harvests",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdHZ1WlA5YjduQ1o0V2JhY1NpOGEtU0tkU3hVLVN0SGZ5TF9jMEx2cWMwNVBhbm1xMlJuVXQwN01mazJKQ0FiR01IM2o1WHpTS3lIdXBUNnVCa1lNWEhxYzZZbUJ3bTdXbC1CT3dONFZ5Y1NDZUtvVDdnakRQNDJUS3Q3bHhsUFBYcEFVNXRhQWxiaXNoTUd6OFYwRGhEOWhkWjFMeXlfQUU5V091RGMwQw?oc=5",
+            "source_type": "news",
+            "severity": "high",
+            "severity_score": 0.5,
+            "source": "The Independent",
+            "disaster_type": "wildfire",
+            "published_at": "2026-11-11T14:50:00Z"
+        }
+    ],
+    "generated_at": "2026-11-12T12:08:38Z"
+}
